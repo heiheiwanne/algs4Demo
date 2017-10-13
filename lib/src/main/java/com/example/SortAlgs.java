@@ -18,7 +18,8 @@ public class SortAlgs {
         long start = System.currentTimeMillis();
 //        sortOfselect(C);
 //        sortOfInsert(C);
-        sortOfShell(C);
+//        sortOfShell(C);
+        sortOfBubble(C);
 //        sortOfShell2(C);
         long  dif= (System.currentTimeMillis() - start);
         System.out.println("耗时: "+String.valueOf(dif));
@@ -105,6 +106,22 @@ public class SortAlgs {
 
             exch(a, i,min);//数据交换
         }
+    }
+
+    /**
+     * 冒泡排序
+     * 从头开始进行循环比对，顺序相反的对调。第一次循环将最大的放到末尾，第二次倒数第二个为最大，依次类推
+     * @param a
+     */
+    public static void sortOfBubble(int[] a) {
+        for (int length = a.length; length > 0; length--) {
+            for (int j = 1; j < length; j++) {
+                if (a[j] < a[j-1]) {
+                    exch(a,j, j-1);
+                }
+            }
+        }
+
     }
 
 
