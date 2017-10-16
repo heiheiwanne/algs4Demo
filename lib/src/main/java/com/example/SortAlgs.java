@@ -23,7 +23,6 @@ public class SortAlgs {
 //        sortOfShell2(C);
         long  dif= (System.currentTimeMillis() - start);
         System.out.println("耗时: "+String.valueOf(dif));
-        assert isSorted(C);
         show(C);
         StdOut.print(isSorted(C));
     }
