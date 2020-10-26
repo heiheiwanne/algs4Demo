@@ -5,6 +5,7 @@ import java.util.Arrays;
 /**
  * @author xumingqiang@keepreal.group
  * @description 堆排序 https://www.cnblogs.com/chengxiao/p/6129630.html
+ * 将给定无序序列构造成一个大顶堆（一般升序采用大顶堆，降序采用小顶堆)。
  * @date 2020/10/26 4:55 PM
  */
 public class HeapSort {

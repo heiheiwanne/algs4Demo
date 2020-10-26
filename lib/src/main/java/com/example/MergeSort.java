@@ -40,7 +40,7 @@ public class MergeSort {
      */
     private static void merge(int[] array, int left, int mid, int right, int[] temp) {
         int i = left; //左序列最低指针
-        int j = mid + 1;//有序列最低指针
+        int j = mid + 1;//右序列最低指针
         int t = 0; // 临时指针
 
         while (i <= mid && j <= right) {
@@ -60,7 +60,7 @@ public class MergeSort {
         }
 
         t = 0;
-        //使用判断条件取出相对应的数据进行赋值，这里的temp是所有的合并分枝共用一个数组
+        //使用判断条件取出相对应的数据进行赋值，这里的temp是所有的合并分支共用一个数组
         while (left <= right) {
             array[left++] = temp[t++];
         }
