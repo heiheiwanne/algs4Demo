@@ -1,7 +1,7 @@
 package com.example.q7_整数反转.f2;
 
 /**
- * 求余（判断是否溢出有多种方式） o(log(n))
+ * 整数反转   求余（判断是否溢出有多种方式） o(log(n))
  */
 public class Solution {
     public int reverse(int x) {

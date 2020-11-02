@@ -31,15 +31,11 @@ public class Solution {
         if (len == 0) {
             return res;
         }
-
-        // 关键步骤
-        Arrays.sort(candidates);
-
+        Arrays.sort(candidates);// 关键步骤
         Deque<Integer> path = new ArrayDeque<>(len);
         dfs(candidates, len, 0, target, path, res);
         return res;
     }
-
     /**
      * @param candidates 候选数组
      * @param len        冗余变量
@@ -58,19 +54,15 @@ public class Solution {
             if (target - candidates[i] < 0) {
                 break;
             }
-
             // 小剪枝：同一层相同数值的结点，从第 2 个开始，候选数更少，结果一定发生重复，因此跳过，用 continue
             if (i > begin && candidates[i] == candidates[i - 1]) {
                 continue;
             }
-
             path.addLast(candidates[i]);
             // 调试语句 ①
             // System.out.println("递归之前 => " + path + "，剩余 = " + (target - candidates[i]));
-
             // 因为元素不可以重复使用，这里递归传递下去的是 i + 1 而不是 i
             dfs(candidates, len, i + 1, target - candidates[i], path, res);
-
             path.removeLast();
             // 调试语句 ②
             // System.out.println("递归之后 => " + path + "，剩余 = " + (target - candidates[i]));

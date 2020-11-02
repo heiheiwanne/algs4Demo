@@ -28,7 +28,6 @@ public class MergeSort {
             merge(array,left,mid,right,temp);
         }
     }
-
     /**
      * 合并
      *
@@ -64,7 +63,6 @@ public class MergeSort {
         while (left <= right) {
             array[left++] = temp[t++];
         }
-
     }
 
 

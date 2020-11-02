@@ -16,20 +16,14 @@ public class Solution {
         if (matrix.length == 0 || matrix[0].length == 0) {
             return result;
         }
-
-        //二维矩阵的维数
-        int row = matrix.length;
+        int row = matrix.length;//二维矩阵的维数
         int col = matrix[0].length;
-
-        //四指针(上、下、左、右)
-        int up = 0;
+        int up = 0;//四指针(上、下、左、右)
         int down = row - 1;
         int left = 0;
         int right = col - 1;
-
         while (true) {
-            //1. 先记录上横行
-            for (int i = left; i <= right; i++) {
+            for (int i = left; i <= right; i++) {//1. 先记录上横行
                 result.add(matrix[up][i]);
             }
             up++;   //横行下移
@@ -37,7 +31,6 @@ public class Solution {
             if (up > down) {
                 break;
             }
-
             //2. 记录右竖行
             for (int i = up; i <= down; i++) {
                 result.add(matrix[i][right]);
@@ -46,7 +39,6 @@ public class Solution {
             if (left > right) {
                 break;
             }
-
             //3. 记录下横行
             for (int i = right; i >= left; i--) {
                 result.add(matrix[down][i]);
@@ -55,7 +47,6 @@ public class Solution {
             if (up > down) {
                 break;
             }
-
             //4. 记录左竖行
             for (int i = down; i >= up; i--) {
                 result.add(matrix[i][left]);

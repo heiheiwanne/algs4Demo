@@ -1,7 +1,7 @@
 package com.example.q21_合并两个有序链表.f2;
 
 /**
- * 递归（看成两个链表头部较小的一个与剩下元素的 merge 操作结果合并） o(n)
+ * 合并两个有序链表 递归（看成两个链表头部较小的一个与剩下元素的 merge 操作结果合并） o(n)
  */
 public class Solution {
     public ListNode mergeTwoLists(ListNode l1, ListNode l2) {
