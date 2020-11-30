@@ -6,6 +6,9 @@ import edu.princeton.cs.algs4.StdOut;
  * Created by xmq on 2017/10/13.
  * 简单基础排序 ：选择，插入 ，希尔
  * 此排序是以升序为目的
+ *
+ * 不稳定的：选择排序、快速排序、希尔排序、堆排序
+ * 稳定：冒泡排序、插入排序、归并排序和基数排序
  */
 
 public class SortAlgs {
