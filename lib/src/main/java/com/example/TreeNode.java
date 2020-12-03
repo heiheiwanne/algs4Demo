@@ -95,4 +95,23 @@ public class TreeNode {
         preOrderTraveral(node.left);
         preOrderTraveral(node.right);
     }
+
+
+    /**
+     * 遍历ViewGroup的方法！！！！！！！！！！！！！
+     *
+     * @param llRoot 根VieGroup
+     */
+    /*private void forData(ViewGroup llRoot) {
+        int childCount = llRoot.getChildCount();
+        for (int i = 0; i < childCount; i++) {
+            if (llRoot.getChildAt(i) instanceof ViewGroup) {
+                Log.e("打印ViewGroup的id", llRoot.getChildAt(i).getId() + "=");
+                forData((ViewGroup) llRoot.getChildAt(i));
+            } else {
+                Log.e("打印View的id", llRoot.getChildAt(i).getId() + "=");
+            }
+        }
+    }*/
+
 }
