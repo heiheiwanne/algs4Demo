@@ -16,9 +16,9 @@ public class Solution {
         System.out.print(a);
     }
 
-    public static int maxSubArray(int[] nums){
+    public static Integer maxSubArray(int[] nums){
         int a = Integer.MIN_VALUE;
-        if(nums == null || nums.length==0) return a;
+        if(nums == null || nums.length==0) return null;
 
         int sum = 0;
 
