@@ -11,11 +11,12 @@ import java.util.Queue;
  * @date 2020/10/26 6:08 PM
  */
 public class TreeNode {
-    TreeNode left;
-    TreeNode right;
-    Integer val;
+   public TreeNode left;
+   public TreeNode right;
+   public Integer val;
 
     /**
+     * 二叉树层次遍历
      * 右视图：广度优先
      * 思路： 利用 BFS 进行层次遍历，记录下每层的最后一个元素。
      * 时间复杂度： O(N)O(N)，每个节点都入队出队了 1 次。
@@ -48,6 +49,11 @@ public class TreeNode {
         }
         return res;
     }
+
+
+
+
+
 
 
     List<Integer> res = new ArrayList<>();
