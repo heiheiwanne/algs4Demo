@@ -16,7 +16,7 @@ public class Solution {
             Integer index = map.get(s.charAt(right));
             map.put(s.charAt(right), right);
             if (index != null && index >= left) {
-                left = index + 1;
+                left = index + 1; //找到左边的位置，因为与当前的有重复的，所以需要+1
             }
             if (right - left + 1 > len) {
                 len = right - left + 1;

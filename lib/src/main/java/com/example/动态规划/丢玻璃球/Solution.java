@@ -1,4 +1,4 @@
-package com.example.丢玻璃球;
+package com.example.动态规划.丢玻璃球;
 
 import java.util.Scanner;
 

@@ -5,6 +5,10 @@ package com.example.q258_各位相加;
  */
 public class Solution {
 
+    public static void main(String[] args) {
+        System.out.println(addDigits1(12434343));
+    }
+
     public int addDigits(int num) {
         if (num % 9 == 0 && num != 0) {
             num = 9;
@@ -14,7 +18,7 @@ public class Solution {
         return num;
     }
 
-    public int addDigits1(int num) {
+    public static int addDigits1(int num) {
         return (num - 1) % 9 + 1;
     }
 }

@@ -48,6 +48,7 @@ public class Solution {
                 stack.push(root);
                 root = root.left;
             }
+            //根 左已经遍历了，再遍历右即可
             root = stack.pop();
             root = root.right;
         }
